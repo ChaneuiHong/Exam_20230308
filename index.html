@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="내 소개 페이지" />
+		<meta property="og:title" content="내 소개 페이지 만들기" />
+		<meta
+			property="og:description"
+			content="내 소개 페이지를 간단히 만들어보세요"
+		/>
+		<meta property="og:image" content="/images/thumbnail.jpg" />
+
+		<title>Samsung x Fast Campus</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<!-- Favicon -->
+		<link rel="icon" href="/android-chrome-512x512.png">
+
+		<!-- style.css -->
+		<link href="/style.css" rel="stylesheet" />
+
+        <style>
+            /* 폰트 */
+            @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+            * {
+                font-family: 'Dongle', sans-serif;
+            }
+			.div1 {
+				float: left;
+				border: 100px;
+			}
+
+            @media (max-width: 800px) {
+                .nav_bar{
+					float: right;
+                    margin: 10 px;
+                }
+
+            }
+            @media (min-width: 800px) {
+                .nav_bar{
+                    margin: 10 px;
+                }
+
+            }
+
+            .backgrount_gray{
+                background-color: rgb(240, 229, 229)
+            }
+			.footer{
+				background-color: beige;
+				/* display: flex; */
+                justify-content: center;
+                align-items: center;
+			}
+            .head {
+                background-color: rgb(183, 183, 188);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        </style>
+	</head>
+
+	<body id="pageTop">
+		<nav class="fixed-top backgrount_gray">
+            <div class="div1">
+                <a href="#hello" style="color:black">Hello</a>
+			</div>
+			<div class="nav_bar">
+                <a href="#career" style="color:black">경력</a>
+                <a href="#hobby" style="color:black">취미</a>
+                <a href="#etc" style="color:black">기타</a>
+            </div>
+		</nav>
+		<br/>
+		<main>
+			<div class="d-md-flex flex-md-equal w-100 h-100 backgrount_gray">
+				<div class="head">
+                    <h1>Introduce myself!</h1>
+                </div>
+				<div id="hello">
+					<p class="my-3" >
+						<h2>안녕하세요. 저는 CRM 영역에서 B2B 고객 시스템을 운영 중인 3년차 IT Engineer 홍찬의입니다.</h2>
+					</p>
+				</div>
+			</div>
+
+			<div class="d-md-flex flex-md-equal w-100 ">
+				<div id="career">
+					<p><h2>경력 사항</h2>
+                        <ol>
+                            <li><h4>(20.9~) System operation</h4></li>
+                            <li><h4>(21.1~) Cloud 전환 프로젝트</h4></li>
+                            <li><h4>(23.2~) HTML&CSS 프레임워크 활용</h4></li>
+                        </ol>
+                    </p>
+				</div>
+				<div>
+					<p><h3>구체적으로 말씀드리면...</h3>
+						<ol>
+                            <li><h4>(20.9~) System operation</h4></li>
+							<h5>- 이러쿵 저러쿵 시스템을 운영했고, 이러쿵 저러쿵한 트러블 슈팅을 했어요.. 그래서 이러쿵 저러쿵 실력을 갖췄어요.</h5>
+                            <li><h4>(21.1~) Cloud 전환 프로젝트</h4></li>
+							<h5>- 이러쿵 저러쿵 Cloud 프로젝트를 했고, 이러쿵 저러쿵한 설계/개발을 했어요.. 그래서 이러쿵 저러쿵 실력을 갖췄어요.</h5>
+                            <li><h4>(20.9~) System operation</h4></li>
+							<h5>- 이러쿵 저러쿵 교율을 받았고, 이러쿵 저러쿵한 지식을 배웠어요 했어요.. 그래서 이러쿵 저러쿵 실력을 갖췄어요.</h5>
+                            
+                        </ol>
+				</div>
+			</div>
+
+			<div class="d-md-flex flex-md-equal w-100 backgrount_gray">
+				<div id="hobby">
+					<h2>🧗🏻‍♀️ 취미</h2>
+                        <ul>
+                            <li><h4>Basketball</h4></li>
+                            <li><h4>Soccer</h4></li>
+                            <li><h4>Playing the guitar</h4></li>
+                        </ul>
+				</div>
+				<div >
+					<p><h3>구체적으로 말씀드리면...</h3>
+						<dl>
+							<dt><h4>Basketball</h4></dt>
+							<dd><h5>- 농구 실력은 이러쿵 저러쿵 정도 되고요. 사람들과 어울리는걸 좋아해요</h5></dd>
+							<dt><h4>Soccer</h4></dt>
+							<dd>- 축구 실력은 이러쿵 저러쿵 저도 되고요. 사람들과 어울리는걸 좋아해요.</h5></dd>
+							<dt><h4>Playing the guitar</h4></dt>
+							<dd><h5>- 기타 실력은 이러쿵 저러쿵 저도 되고요. 사람들과 어울리는걸 좋아해요.</h5></dd>
+						</ul>
+				</div>
+			</div>
+
+
+			<div class="d-md-flex flex-md-equal w-100" >
+				<div id="etc">
+					<h2>😀 기타</h2>
+                    	<ul>
+                            <li><h4>~~~해커톤 수상</h4></li>
+                            <li><h4>~~~교육 수료</h4></li>
+                            <li><h4>~~~자격증 취득</h4></li>
+                        </ul>
+                </div>
+				<div >
+					<p><h3>구체적으로 말씀드리면...</h3>
+						<ul>
+							<li><h4>~~~해커톤 수상</h4></li>
+							<h5>- ~~~ 해커톤에 참가해서 ~~~상을 수상했어요.</h5>
+							<li><h4>~~~교육 수료</h4></li>
+							<h5>- ~~~ 교육에 참가해서 ~~~ 수료증을 받았어요.</h5>
+							<li><h4>~~~자격증 취득</h4></li>
+							<h5>- ~~~ 자격증을 취등했어요.</h5>	
+						</ul>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="d-md-flex flex-md-equal w-100 footer" >
+				<div id="etc">
+					<h2>About</h2>
+                    <h4>저에 대해 궁금한 점이 있으시다면 아래 Social link를 통해서 연락해주세요!</h4>
+				</div>
+				<div>
+						<h2>Social</h2>
+						<ol class="list-unstyled">
+							<li><a href="https://www.facebook.com">페이스북</a></li>
+							<li><a href="https://www.instagram.com">인스타그램</a></li>
+							<li><a href="mailto:hce714@naver.com?subject=안녕하세요">메일 보내기</a></li>
+							<li><a href='tel:010-7396-7222'>전화 걸기</a></li>
+						</ol>
+						<p>
+							<a href="#pageTop">Back to top</a>
+						</p>
+				</div>
+			</div>
+
+		</main>
+	</body>
+</html>
